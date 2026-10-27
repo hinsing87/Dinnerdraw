@@ -12,7 +12,7 @@ st.set_page_config(page_title="今晚食咩餸", page_icon="🍽️", layout="ce
 # 2. 快取數據
 @st.cache_data(ttl=600)
 def load_menu():
-    csv_url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ9u6bG8XJG5y4KLGtdZs6NdcgUfZq3jXF_TQfdZ5ZW1LiMAwDXXJewOJ6FuIz5iHFb3Jojl8FNMAW6/pub?output=csv"
+    csv_url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ9u6bG8XJG5y4KLGtdZs6NdcgUfZq3jXF_TQfdZ5ZW1LiMAwDXXJEwOJ6Fulz5iHFb3Jojl8FNMAW6/pub?output=csv"
     menu = []
     try:
         req = urllib.request.Request(csv_url)
