@@ -26,7 +26,8 @@ def load_menu():
             if len(row) > col_index and row[col_index].strip():
                 menu.append(row[col_index].strip())
     except Exception as e:
-        st.error("讀取餐單失敗，轉用後備名單...")
+        # 加咗 {e}，畫面會直接顯示發生咩事
+        st.error(f"讀取餐單失敗，轉用後備名單... (錯誤詳情: {e})")
         menu = ["番茄炒蛋 🍅", "煎三文魚 🐟", "落西營盤買外賣 🥡"]
         
     return menu
